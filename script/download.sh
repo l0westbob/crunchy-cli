@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Tell the user on the first run, that he did not create any download tasks! He has to read this file and uncomment this line
+## Tell the user on the first run, that he did not create any download tasks! He has to read this file and comment out this line
 echo "You don't have any download tasks defined OR you just created tasks and did not uncomment this line! Check the file ./script/download.sh and read the comments!" && exit 1
 
 ## Start ##
