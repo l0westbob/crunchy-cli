@@ -1,0 +1,16 @@
+name: "crunchy"
+
+services:
+  cli:
+    container_name: "cli"
+    build:
+      context: "./docker-images/"
+      dockerfile: "Dockerfile"
+    environment:
+      COOKIE: ${COOKIE?}
+      DOWNLOAD_DIR: ${DOWNLOAD_DIR?}
+    volumes:
+      - "${DOWNLOAD_DIR}:/downloads"
+      - "./script/download.sh:/download.sh"
+    entrypoint:
+      - "/crunchy-cli.sh"
