@@ -13,7 +13,7 @@ Example content for `script/download.sh`:
 #!/usr/bin/env bash
 
 ## Start ##
-# Create a new download directory if it does'nt exist yet
+# Create a new download directory if it doesn't exist yet
 mkdir -p one-piece
 # Change directory to download directory
 cd one-piece
@@ -24,7 +24,7 @@ cd ..
 ## End ##
 
 ## Start ##
-# Create a new download directory if it does'nt exist yet
+# Create a new download directory if it doesn't exist yet
 mkdir -p naruto
 # Change directory to download directory
 cd naruto
